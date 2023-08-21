@@ -4,48 +4,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog Escolar</title>
+  <title>Proyecto - Blog Escolar</title>
   <!-- css -->
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/bootstrap4-pleasant.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="pt-5 bg-dark text-light">
+  <!-- barra de navegacion -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Blog Escolar</a>
+      <!-- foto de perfil -->
+      <a class="nav-link" href="#">foto de perfil</a>
+      <a class="navbar-brand text-success fw-bold" href="#">E.E.S.T Nº2</a>
+      <!-- comprimir navbar -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class=" navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- navbar items -->
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" aria-current="page" href="#">Pagina principal</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">favoritos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown link
+            <a class="nav-link p-0" href="#">
+              <form class="form-inline">
+                <label class="sr-only" for="inlineFormInputGroup">Buscar</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username"
+                    style="border-radius: 0px;">
+                </div>
+
+                <button type="submit" class="btn btn-success" style="border-radius: 0px;">Buscar</button>
+              </form>
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <!-- pagina -->
+  <div class="container-fluid text-center p-0 mt-2 bg-dark">
+    <div class="row">
+      <!-- perfil -->
+      <div class=" col-2 border-right" style="min-height: 500px;">
+        <h3>Perfil</h3>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">ver mi perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">mensajes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">amigos</a>
+          </li>
+        </ul>
+      </div>
+      <!-- contenido -->
+      <div class="col">
+        <h3>Contenido</h3>
+      </div>
+      <!-- menu / foro -->
+      <div class="col-4 border-left">
+        <h3>menu/foro</h3>
+        <!-- grupo -->
+        <div class="card bg-warning text-white mb-3">
+          <div class="card-body">
+            <h4>Literatura</h4>
+            <footer>
+              <ol class="list-group">
+                <!-- articulo -->
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">2do Grado</div>
+                  </div>
+                  <span class="badge bg-primary rounded-pill">14</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">3er grado</div>
+                  </div>
+                  <span class="badge bg-primary rounded-pill">messi</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">4to grado</div>
+                    Content for list item
+                  </div>
+                  <span class="badge bg-primary rounded-pill"></span>
+                </li>
+              </ol>
+            </footer>
+          </div>
+        </div>
 
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Subheading</div>
+              Content for list item
+            </div>
+            <span class="badge bg-primary rounded-pill">14</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Subheading</div>
+              Content for list item
+            </div>
+            <span class="badge bg-primary rounded-pill">14</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Subheading</div>
+              Content for list item
+            </div>
+            <span class="badge bg-primary rounded-pill">14</span>
+          </li>
+        </ol>
+      </div>
 
+      <!-- forzar a la columna a una nueva linea -->
+      <div class="w-100"></div>
+      <div class="col-6 col-sm-3 border">.col-6 .col-sm-3</div>
+      <div class="col-6 col-sm-3 border">.col-6 .col-sm-3</div>
+    </div>
+  </div>
+  <!-- footer (abajo a la izquierda ) -->
+  <footer>footer</footer>
 
   <!-- js -->
   <script src="js/bootstrap.js"></script>
