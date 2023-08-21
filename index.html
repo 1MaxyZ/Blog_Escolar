@@ -6,9 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proyecto - Blog Escolar</title>
   <!-- css -->
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="css/bootstrap4-pleasant.css">
   <link rel="stylesheet" href="css/style.css">
+  <!-- icono -->
+  <link rel="shortcut icon" href="">
 </head>
 
 <body class="pt-5 bg-dark text-light">
@@ -74,73 +77,102 @@
       <!-- menu / foro -->
       <div class="col-4 border-left">
         <h3>menu/foro</h3>
-        <!-- grupo -->
-        <div class="card bg-warning text-white mb-3">
-          <div class="card-body">
-            <h4>Literatura</h4>
-            <footer>
-              <ol class="list-group">
-                <!-- articulo -->
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                  <div class="ms-2 me-auto">
-                    <div class="fw-bold">2do Grado</div>
-                  </div>
-                  <span class="badge bg-primary rounded-pill">14</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                  <div class="ms-2 me-auto">
-                    <div class="fw-bold">3er grado</div>
-                  </div>
-                  <span class="badge bg-primary rounded-pill">messi</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                  <div class="ms-2 me-auto">
-                    <div class="fw-bold">4to grado</div>
-                    Content for list item
-                  </div>
-                  <span class="badge bg-primary rounded-pill"></span>
-                </li>
-              </ol>
-            </footer>
+        <!--  -->
+        <ol class="list-group ms-0 me-5 mt-3 mb-3">
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="fw-bold fs-4">Para ti</div>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="dropdown m-0">
+                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <div class="fw-bold">Favoritos</div>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">1er Grado</a>
+                  <a class="dropdown-item" href="#">2do Grado</a>
+                  <a class="dropdown-item" href="#">3er Grado</a>
+                  <a class="dropdown-item" href="#">4to grado</a>
+                </div>
+              </div>
+            <span class="badge bg-primary rounded-pill">3</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Favoritos</div>
+            </div>
+            <span class="badge bg-primary rounded-pill">14</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Mas visitadas</div>
+            </div>
+            <span class="badge bg-primary rounded-pill"></span>
+          </li>
+        </ol>
+        <!-- Materias escolares -->
+        <ol class="list-group ms-0 me-5 mt-3 mb-3">
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="fw-bold fs-4">Materias escolares</div>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="dropdown m-0">
+                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <div class="fw-bold">Literatura</div>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">1er Grado</a>
+                  <a class="dropdown-item" href="#">2do Grado</a>
+                  <a class="dropdown-item" href="#">3er Grado</a>
+                  <a class="dropdown-item" href="#">4to grado</a>
+                </div>
+              </div>
+            <span class="badge bg-primary rounded-pill"></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="dropdown m-0">
+              <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="fw-bold">Matematica</div>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">1er Grado</a>
+                <a class="dropdown-item" href="#">2do Grado</a>
+                <a class="dropdown-item" href="#">3er Grado</a>
+                <a class="dropdown-item" href="#">4to grado</a>
+              </div>
+            </div>
+          <span class="badge bg-primary rounded-pill">777</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="dropdown m-0">
+            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="fw-bold">Ingles</div>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">1er Grado</a>
+              <a class="dropdown-item" href="#">2do Grado</a>
+              <a class="dropdown-item" href="#">3er Grado</a>
+              <a class="dropdown-item" href="#">4to grado</a>
+            </div>
           </div>
-        </div>
-
-        <ol class="list-group list-group-numbered">
-          <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold">Subheading</div>
-              Content for list item
-            </div>
-            <span class="badge bg-primary rounded-pill">14</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold">Subheading</div>
-              Content for list item
-            </div>
-            <span class="badge bg-primary rounded-pill">14</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold">Subheading</div>
-              Content for list item
-            </div>
-            <span class="badge bg-primary rounded-pill">14</span>
-          </li>
+        <span class="badge bg-primary rounded-pill">:0</span>
+      </li>
         </ol>
       </div>
 
       <!-- forzar a la columna a una nueva linea -->
       <div class="w-100"></div>
-      <div class="col-6 col-sm-3 border">.col-6 .col-sm-3</div>
-      <div class="col-6 col-sm-3 border">.col-6 .col-sm-3</div>
+      <div class="col-6 col-sm-3 border">.col-6</div>
     </div>
   </div>
   <!-- footer (abajo a la izquierda ) -->
   <footer>footer</footer>
 
   <!-- js -->
-  <script src="js/bootstrap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
 </body>
 
