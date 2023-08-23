@@ -14,13 +14,15 @@
   <link rel="shortcut icon" href="">
 </head>
 
-<body class="pt-5 bg-dark text-light">
+<body class="pt-5 fondo2 text-light">
   <!-- barra de navegacion -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
     <div class="container-fluid">
       <!-- foto de perfil -->
-      <a class="nav-link" href="#">foto de perfil</a>
-      <a class="navbar-brand text-success fw-bold" href="#">E.E.S.T Nº2</a>
+      <img
+        src="https://us.123rf.com/450wm/yupiramos/yupiramos1608/yupiramos160819017/61416478-avatar-cabeza-masculina-perfil-icono-persona-social-sitio-web-miembro-ilustraci%C3%B3n-vectorial.jpg"
+        class="img perfil-nav" alt="...">
+      <a class="navbar-brand fw-bold" href="#" id="color1">&nbsp E.E.S.T Nº2</a>
       <!-- comprimir navbar -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +46,7 @@
                     style="border-radius: 0px;">
                 </div>
 
-                <button type="submit" class="btn btn-success" style="border-radius: 0px;">Buscar</button>
+                <button type="submit" class="btn" id="fondo1" style="border-radius: 0px;">Buscar</button>
               </form>
             </a>
           </li>
@@ -53,20 +55,32 @@
     </div>
   </nav>
   <!-- pagina -->
-  <div class="container-fluid text-center p-0 mt-2 bg-dark">
+  <div class="container-fluid text-center p-0 mt-2">
     <div class="row">
       <!-- perfil -->
-      <div class=" col-2 border-right" style="min-height: 500px;">
+      <div class="col-4 col-lg-2 bg-dark" style="min-height: 500px;">
         <h3>Perfil</h3>
+        <img
+          src="https://us.123rf.com/450wm/yupiramos/yupiramos1608/yupiramos160819017/61416478-avatar-cabeza-masculina-perfil-icono-persona-social-sitio-web-miembro-ilustraci%C3%B3n-vectorial.jpg"
+          class="img" alt="...">
         <ul class="nav flex-column">
           <li class="nav-item">
             <a class="nav-link" href="#">ver mi perfil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">mensajes</a>
+            <a class="nav-link" href="#">cerrar sesion</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">amigos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">mensajes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">configuracion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">sobre nosotros</a>
           </li>
         </ul>
       </div>
@@ -75,25 +89,25 @@
         <h3>Contenido</h3>
       </div>
       <!-- menu / foro -->
-      <div class="col-4 border-left">
+      <div class="col-4 bg-dark">
         <h3>menu/foro</h3>
         <!--  -->
         <ol class="list-group ms-0 me-5 mt-3 mb-3">
           <li class="list-group-item d-flex justify-content-between align-items-start">
             <div class="fw-bold fs-4">Para ti</div>
           <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="dropdown m-0">
-                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
-                  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <div class="fw-bold">Favoritos</div>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">1er Grado</a>
-                  <a class="dropdown-item" href="#">2do Grado</a>
-                  <a class="dropdown-item" href="#">3er Grado</a>
-                  <a class="dropdown-item" href="#">4to grado</a>
-                </div>
+            <div class="dropdown m-0">
+              <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="fw-bold">Favoritos</div>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">1er Grado</a>
+                <a class="dropdown-item" href="#">2do Grado</a>
+                <a class="dropdown-item" href="#">3er Grado</a>
+                <a class="dropdown-item" href="#">4to grado</a>
               </div>
+            </div>
             <span class="badge bg-primary rounded-pill">3</span>
           </li>
           <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -114,18 +128,18 @@
           <li class="list-group-item d-flex justify-content-between align-items-start">
             <div class="fw-bold fs-4">Materias escolares</div>
           <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="dropdown m-0">
-                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
-                  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <div class="fw-bold">Literatura</div>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">1er Grado</a>
-                  <a class="dropdown-item" href="#">2do Grado</a>
-                  <a class="dropdown-item" href="#">3er Grado</a>
-                  <a class="dropdown-item" href="#">4to grado</a>
-                </div>
+            <div class="dropdown m-0">
+              <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="fw-bold">Literatura</div>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">1er Grado</a>
+                <a class="dropdown-item" href="#">2do Grado</a>
+                <a class="dropdown-item" href="#">3er Grado</a>
+                <a class="dropdown-item" href="#">4to grado</a>
               </div>
+            </div>
             <span class="badge bg-primary rounded-pill"></span>
           </li>
           <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -141,23 +155,23 @@
                 <a class="dropdown-item" href="#">4to grado</a>
               </div>
             </div>
-          <span class="badge bg-primary rounded-pill">777</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-          <div class="dropdown m-0">
-            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
-              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <div class="fw-bold">Ingles</div>
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">1er Grado</a>
-              <a class="dropdown-item" href="#">2do Grado</a>
-              <a class="dropdown-item" href="#">3er Grado</a>
-              <a class="dropdown-item" href="#">4to grado</a>
+            <span class="badge bg-primary rounded-pill">777</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="dropdown m-0">
+              <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="fw-bold">Ingles</div>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">1er Grado</a>
+                <a class="dropdown-item" href="#">2do Grado</a>
+                <a class="dropdown-item" href="#">3er Grado</a>
+                <a class="dropdown-item" href="#">4to grado</a>
+              </div>
             </div>
-          </div>
-        <span class="badge bg-primary rounded-pill">:0</span>
-      </li>
+            <span class="badge bg-primary rounded-pill">:0</span>
+          </li>
         </ol>
       </div>
 

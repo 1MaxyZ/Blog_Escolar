@@ -1,12 +1,36 @@
-.dropdown{
+.dropdown {
     display: grid;
     height: 100%;
     width: 100%;
 
 }
-#dropdownMenuButton{
+
+#dropdownMenuButton {
     height: 100%;
     width: 100%;
-justify-content: start;
-display: inline-flex;
+    justify-content: start;
+    display: inline-flex;
+}
+
+.img {
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+}
+
+.perfil-nav {
+    height: 35px;
+    width: 35px;
+}
+
+#color1 {
+    color: #ffc107;
+}
+
+#fondo1 {
+    background-color: #ffc107;
+}
+
+.fondo2 {
+    background-color: #1a1a1a;
 }
