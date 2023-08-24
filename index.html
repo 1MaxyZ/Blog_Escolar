@@ -8,21 +8,20 @@
   <!-- css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/bootstrap4-pleasant.css">
   <link rel="stylesheet" href="css/style.css">
   <!-- icono -->
   <link rel="shortcut icon" href="">
 </head>
 
-<body class="pt-5 fondo2 text-light">
+<body class="pt-5 text-light fondo_body">
   <!-- barra de navegacion -->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <div class="container-fluid">
       <!-- foto de perfil -->
       <img
         src="https://us.123rf.com/450wm/yupiramos/yupiramos1608/yupiramos160819017/61416478-avatar-cabeza-masculina-perfil-icono-persona-social-sitio-web-miembro-ilustraci%C3%B3n-vectorial.jpg"
         class="img perfil-nav" alt="...">
-      <a class="navbar-brand fw-bold" href="#" id="color1">&nbsp E.E.S.T Nº2</a>
+      <a class="navbar-brand fw-bold text-warning" href="#">&nbsp EscoBlog</a>
       <!-- comprimir navbar -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,17 +37,10 @@
             <a class="nav-link" href="#">favoritos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link p-0" href="#">
-              <form class="form-inline">
-                <label class="sr-only" for="inlineFormInputGroup">Buscar</label>
-                <div class="input-group">
-                  <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username"
-                    style="border-radius: 0px;">
-                </div>
-
-                <button type="submit" class="btn" id="fondo1" style="border-radius: 0px;">Buscar</button>
-              </form>
-            </a>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-warning" type="submit">Search</button>
+            </form>
           </li>
         </ul>
       </div>
@@ -58,11 +50,13 @@
   <div class="container-fluid text-center p-0 mt-2">
     <div class="row">
       <!-- perfil -->
-      <div class="col-4 col-lg-2 bg-dark" style="min-height: 500px;">
-        <h3>Perfil</h3>
+      <div class="col-4 col-lg-2 fondo_pag border-end borde pt-3" style="min-height: 500px;">
+        <h3 class="text-warning">Perfil</h3>
+        <!-- foto de perfil -->
         <img
           src="https://us.123rf.com/450wm/yupiramos/yupiramos1608/yupiramos160819017/61416478-avatar-cabeza-masculina-perfil-icono-persona-social-sitio-web-miembro-ilustraci%C3%B3n-vectorial.jpg"
           class="img" alt="...">
+        <!-- links -->
         <ul class="nav flex-column">
           <li class="nav-item">
             <a class="nav-link" href="#">ver mi perfil</a>
@@ -85,62 +79,92 @@
         </ul>
       </div>
       <!-- contenido -->
-      <div class="col">
-        <h3>Contenido</h3>
+      <div class="col pt-3 contenido">
+        <h3 class="text-warning">Contenido</h3>
       </div>
       <!-- menu / foro -->
-      <div class="col-4 bg-dark">
-        <h3>menu/foro</h3>
-        <!--  -->
+      <div class="col-4 fondo_pag border-start borde pt-3">
+        <h3 class="text-warning">menu/foro</h3>
+        <!-- para ti -->
         <ol class="list-group ms-0 me-5 mt-3 mb-3">
-          <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="fw-bold fs-4">Para ti</div>
-          <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="dropdown m-0">
-              <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <div class="fw-bold">Favoritos</div>
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">1er Grado</a>
-                <a class="dropdown-item" href="#">2do Grado</a>
-                <a class="dropdown-item" href="#">3er Grado</a>
-                <a class="dropdown-item" href="#">4to grado</a>
-              </div>
+          <div class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <!-- nombre del grupo -->
+              <h5 class="mb-1">Para ti</h5>
             </div>
-            <span class="badge bg-primary rounded-pill">3</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold">Favoritos</div>
-            </div>
-            <span class="badge bg-primary rounded-pill">14</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold">Mas visitadas</div>
-            </div>
-            <span class="badge bg-primary rounded-pill"></span>
-          </li>
+          </div>
+          <!-- favoritas -->
+          <a href="#" class="list-group-item list-group-item-action d-flex w-100 justify-content-between"
+            aria-current="true">
+            <p class="mb-1 fw-semibold">Favoritos</p>
+            <small class="text-muted"> hace 30 minutos</small>
+            <small class="text-muted">0 respuestas</small>
+          </a>
+          <!-- mas visitada/ tendencia -->
+          <a href="#" class="list-group-item list-group-item-action d-flex w-100 justify-content-between"
+            aria-current="true">
+            <p class="mb-1 fw-semibold">Tendencias</p>
+          </a>
         </ol>
         <!-- Materias escolares -->
         <ol class="list-group ms-0 me-5 mt-3 mb-3">
-          <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="fw-bold fs-4">Materias escolares</div>
-          <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <!-- nombre del grupo -->
+              <h5 class="mb-1">Materias Escolares</h5>
+            </div>
+          </div>
+          <!-- articulo 1: tipo lista -->
+          <a href="#" class="list-group-item list-group-item-action d-flex w-100 justify-content-between"
+            aria-current="true">
+            <p class="mb-1 fw-semibold">Articulo 1</p>
+            <small class="text-muted">hace 3 dias</small>
+            <small class="text-muted">100 respuestas</small>
+          </a>
+          <!-- articulo 2: tipo lista -->
+          <a href="#" class="list-group-item list-group-item-action d-flex w-100 justify-content-between"
+            aria-current="true">
+            <p class="mb-1 fw-semibold">Articulo 2</p>
+            <small class="text-muted">hace 4 dias</small>
+            <small class="text-muted">140 respuestas</small>
+          </a>
+          <!-- articulo 3: tipo lista -->
+          <a href="#" class="list-group-item list-group-item-action d-flex w-100 justify-content-between"
+            aria-current="true">
+            <p class="mb-1 fw-semibold">Articulo 3</p>
+            <small class="text-muted">hace 1 dia</small>
+            <small class="text-muted">154545 respuestas</small>
+          </a>
+          <!-- articulo 4: tipo dropdown (no funciono) -->
+
+          <!-- <li class="list-group-item list-group-item-action d-flex w-100 justify-content-between" aria-current="true">
+            <button class="btn dropdown-toggle p-0 mb-1 fw-semibold" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Articulo 2: tipo dropdown
+            </button>
+            <small class="text-muted">hace 3 dias</small>
+            <small class="text-muted">320 respuestas</small>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </li>
+          <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
             <div class="dropdown m-0">
-              <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 <div class="fw-bold">Literatura</div>
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">1er Grado</a>
-                <a class="dropdown-item" href="#">2do Grado</a>
-                <a class="dropdown-item" href="#">3er Grado</a>
-                <a class="dropdown-item" href="#">4to grado</a>
+                <a class="dropdown-item list-group-item-action" href="#">1er Grado</a>
+                <a class="dropdown-item list-group-item-action" href="#">2do Grado</a>
+                <a class="dropdown-item list-group-item-action" href="#">3er Grado</a>
+                <a class="dropdown-item list-group-item-action" href="#">4to grado</a>
               </div>
             </div>
-            <span class="badge bg-primary rounded-pill"></span>
+            <span class="badge bg-warning rounded-pill"></span>
           </li>
           <li class="list-group-item d-flex justify-content-between align-items-start">
             <div class="dropdown m-0">
@@ -155,33 +179,18 @@
                 <a class="dropdown-item" href="#">4to grado</a>
               </div>
             </div>
-            <span class="badge bg-primary rounded-pill">777</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="dropdown m-0">
-              <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <div class="fw-bold">Ingles</div>
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">1er Grado</a>
-                <a class="dropdown-item" href="#">2do Grado</a>
-                <a class="dropdown-item" href="#">3er Grado</a>
-                <a class="dropdown-item" href="#">4to grado</a>
-              </div>
-            </div>
-            <span class="badge bg-primary rounded-pill">:0</span>
-          </li>
+            <span class="badge bg-warning rounded-pill">777</span>
+          </li> -->
         </ol>
       </div>
-
       <!-- forzar a la columna a una nueva linea -->
       <div class="w-100"></div>
-      <div class="col-6 col-sm-3 border">.col-6</div>
+      <div class="col-6 col-sm-3 border">.col= tamaño normal <br> .col-sm= tamaño que toma antes de reducirse</div>
     </div>
   </div>
-  <!-- footer (abajo a la izquierda ) -->
-  <footer>footer</footer>
+  <!-- footer (incluire el footer como una extension del perfil) -->
+  <footer style="min-height: 200px;">footer</footer>
+
 
   <!-- js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"

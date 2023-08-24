@@ -23,14 +23,28 @@
     width: 35px;
 }
 
-#color1 {
-    color: #ffc107;
+.navbar {
+    background-color: #80002b;
 }
 
-#fondo1 {
-    background-color: #ffc107;
+.fondo_body {
+    background-color: #181818;
 }
 
-.fondo2 {
-    background-color: #1a1a1a;
+.fondo_pag {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.borde {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.list-group-item {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.contenido {
+    min-height: 1000px;
 }
